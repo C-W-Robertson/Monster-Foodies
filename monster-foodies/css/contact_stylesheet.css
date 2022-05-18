@@ -1,0 +1,240 @@
+/* style sheet */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #E6DfDC;
+}
+
+body {
+	padding: 10px;
+	margin: 10px;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+	text-indent: -9999px;
+	margin: 0px;
+}
+
+/* Do not modify above */
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-template-rows: 2fr 3fr 1fr;
+	grid-template-areas:
+		"header header header"
+		"sidebar sidebar video"
+		"footer footer footer";
+}
+
+.container > div {
+	text-align: center;
+}
+	
+.header {
+	grid-area: header;
+	background: #86B6E9;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background: #677AEB;
+	color: #E6DfDC;
+}
+
+.video {
+	grid-area: video;
+	background: #FFCC32;
+}
+
+.footer {
+	grid-area: footer;
+	background: #86B6E9;
+}
+
+
+
+
+
+
+
+
+
+/* note to self: layout is currently NOT responsive. Probably need to add "col-(variable)" as a class. */
+
+/* For mobile phones */
+[class*="col-"] {
+width: 100%;}
+}
+
+
+/* For tablets */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+.item1 {
+	height: auto;
+	width: 15%;
+	margin: 0px;
+}
+
+.nav {
+	margin-left: 70px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#text {
+	display: inline-block;
+}
+
+video {
+	max-width: 90%;
+	height: auto;
+	padding: 40px;
+}
+
+.footer {
+	padding-top: 25px;
+}
+
+a {
+	font-size: 175%;
+	font-weight: bold;
+	transition-duration: 0.3s;
+}
+
+a:link {
+	color: #677AEB;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #AB0028;
+}
+
+a:hover {
+	color: #F7194D;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:active {
+	color: #0980AB;
+}
+
+h2, h3 {
+	font-weight: bold;
+	font-size: 200%;
+	width: 60%;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 10px auto;
+}
+
+h3 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+h4 {
+	margin: 5px;
+	font-size: 75%;
+}
+
+.phone {
+	font-size: 200%;
+}
+
+.email {
+	font-size: 200%;
+}
+
+.chat {
+	font-size: 200%;
+}
+
+.text_area {
+	margin-top: 30px;
+}
+
+.email {
+	width: 50%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button {
+	background-color: #86B6E9;
+	border: 2px solid #E6DfDC;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 75%;
+	padding: 5px 5px;
+	margin: 15px 15px;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: #AB0028;
+	color: white;
+}
+
+.sidebar, .video {
+	border: 5px solid #86B6E9;
+}

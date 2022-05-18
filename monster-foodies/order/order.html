@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	
+		<title>Order From The Foodie Truck</title>
+		
+		<meta charset="utf-8">
+		
+		<link href="../css/order_stylesheet.css" type="text/css" rel="stylesheet"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="CW Robertson">
+		<meta name="description" content="Order From Cookie Monster's Foodie Truck">
+	
+	</head>
+	
+	<body>
+	
+		<div class="container">
+		
+			<div class="header col">
+			
+			<div class="row">
+				<h1>Cookie Monster's Foodie Truck</h1>
+				
+				<img class="item1" id="header_img" src="../images/foodie_truck_logo.png"
+					alt="Cookie Monster's Foodie Truck logo"
+					title="Cookie Monster's Foodie truck logo"
+				/>
+			</div>
+			
+			<div class="row">
+				<h2>Place Your Order!</h2>
+			</div>
+			
+			<div class="row">
+				<div class="nav col-12">
+					<div class="col-2 top_nav">
+						<a href="../index.html">Home</a>
+					</div>
+					<div class="col-2 top_nav">
+						<a href="../about/about.html">About</a>
+					</div>
+					<div class="col-2 top_nav">
+						<a href="../menu/menu.html">Menu</a>
+					</div>
+					<div class="col-2 top_nav">
+						<a href="order.html">Order</a>
+					</div>
+					<div class="col-2 top_nav">
+						<a href="../contact/contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+				
+			</div>
+
+
+			<div class="content col">
+
+				<div id="order_info">
+				
+				<fieldset>
+					
+					<form action="mailto:monsterfoodies@mrhoopers" method="post">
+			
+					<div class="row">
+						<h2>Order Info</h2>
+					</div>
+					
+					<div class="row">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" />
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" />
+					</div>
+					
+					<div class="row">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" id="phone" />
+					
+					<label for="time">Time for pickup:</label>
+						<select id="time" name="time">
+							<option value="9:00 AM">9:00 AM</option>
+							<option value="9:30 AM">9:30 AM</option>
+							<option value="10:00 AM">10:00 AM</option>
+							<option value="10:30 AM">10:30 AM</option>
+							<option value="11:00 AM">11:00 AM</option>
+							<option value="11:30 AM">11:30 AM</option>
+							<option value="12:00 PM">NOON</option>
+							<option value="12:30 PM">12:30 PM</option>
+							<option value="1:00 PM">1:00 PM</option>
+							<option value="1:30 PM">1:30 PM</option>
+							<option value="2:00 PM">2:00 PM</option>
+							<option value="2:30 PM">2:30 PM</option>
+							<option value="3:00 PM">3:00 PM</option>
+							<option value="3:30 PM">3:30 PM</option>
+							<option value="4:00 PM">MONSTER TEA TIME!</option>
+							<option value="4:30 PM">4:30 PM</option>
+							<option value="5:00 PM">5:00 PM LAST CALL!</option>
+						</select>
+					</div>
+					
+					<hr />
+						
+					<div class="select_instructions">You can choose up to <em>nine</em> different items. Otherwise, we run out of room in truck</div>
+					
+					<hr />
+					
+					<div class="row">
+					<label for="item_one">Select Item 1:</label>
+					<select class="item" id="item_one" name="item_one">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity1">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity1" class="quantity" name="quantity" min="1" max="10">
+					
+					<label for="notes1">Notes:</label>
+					<textarea id="notes1" class="notes" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+					
+					<div class="row">
+					<label for="item_two">Select Item 2:</label>
+					<select class="item" id="item_two" name="item_two">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity2">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity2" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes2">Notes:</label>
+					<textarea class="notes" id="notes2" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+
+					<div class="row">
+					<label for="item_three">Select Item 3:</label>
+					<select class="item" id="item_three" name="item_three">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+
+					<label for="quantity3">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity3" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes3">Notes:</label>
+					<textarea class="notes" id="notes3" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+
+					<div class="row">
+					<label for="item_four">Select Item 4:</label>
+					<select class="item" id="item_four" name="item_four">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity4">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity4" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes4">Notes:</label>
+					<textarea class="notes" id="notes4" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+					
+					<div class="row">
+					<label for="item_five">Select Item 5:</label>
+					<select class="item" id="item_five" name="item_five">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity5">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity5" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes5">Notes:</label>
+					<textarea class="notes" id="notes5" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+					
+					<div class="row">
+					<label for="item_six">Select Item 6:</label>
+					<select class="item" id="item_six" name="item_six">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity6">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity6" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes6">Notes:</label>
+					<textarea class="notes" id="notes6" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+
+
+					<div class="row">
+					<label for="item_seven">Select Item 7:</label>
+					<select class="item" id="item_seven" name="item_seven">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+					
+					<label for="quantity7">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity7" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes7">Notes:</label>
+					<textarea class="notes" id="notes7" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+
+
+					<div class="row">
+					<label for="item_eight">Select Item 8:</label>
+					<select class="item" id="item_eight" name="item_eight">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+
+					<label for="quantity8">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity8" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes8">Notes:</label>
+					<textarea class="notes" id="notes8" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+					
+
+					<div class="row">
+					<label for="item_nine">Select Item 9:</label>
+					<select class="item" id="item_nine" name="item_nine">
+						<option value="fruit_salad">Fruit Salad $2.99</option>
+						<option value="biscuits">Buttermilk Biscuits $2.99</option>
+						<option value="zachos">Zachos $4.50</option>
+						<option value="dip">Artichoke Dip $5.25</option>
+						<option value="banana_chips">Banananana Chips $2.50</option>
+						<option value="pizza">Half & Half Pizza $8.99</option>
+						<option value="sandwich">Tuna Sandwich $4.99</option>
+						<option value="tacos">Nopalis Tacos $5.50</option>
+						<option value="burger">Veggie Burger $5.99</option>
+						<option value="pasta">Pasta with Veggies $6.99</option>
+						<option value="rice">Veggie Fried Rice $5.99</option>
+						<option value="smores">S'mores $2.99</option>
+						<option value="starfruit">Starfruit Skewers $4.99</option>
+						<option value="vanilla_cookies">Vanilla COOKIES $1.99</option>
+					</select>
+
+					<label for="quantity9">Quantity (<em>max 10</em>):</label>
+					<input type="number" id="quantity9" class="quantity" name="quantity" min="1" max="10">
+	
+					<label for="notes9">Notes:</label>
+					<textarea class="notes" id="notes9" name="notes" rows="1" cols="50">Requests...</textarea>
+					</div>
+
+					
+					<hr />
+					
+					<div class="row">
+					<h2>It's Ready!</h2>
+					</div>
+					
+					<div class="row">
+					<input type="submit" class="submit button" name="submit" value="Send" />
+					<input type="reset" class="reset button" name="reset" value="Clear Form" />
+					</div>
+					
+					</form>
+
+				</fieldset>
+				</div>
+			</div>
+
+			<div class="footer col">
+			
+				<div class="row">
+					<div class="nav col-12">
+						<div class="col-2 bottom_nav">
+							<a href="../index.html">Home</a>
+						</div>
+						<div class="col-2 bottom_nav">
+							<a href="../about/about.html">About</a>
+						</div>
+						<div class="col-2 bottom_nav">
+							<a href="../menu/menu.html">Menu</a>
+						</div>
+						<div class="col-2 bottom_nav">
+							<a href="order.html">Top</a>
+						</div>
+						<div class="col-2 bottom_nav">
+							<a href="../contact/contact.html">Contact</a>
+						</div>
+					</div>
+				</div>
+			
+				<h4>Author: CW Robertson</h4>
+				<h4>Last Revised: 08.13.2021</h4>
+			
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>	
